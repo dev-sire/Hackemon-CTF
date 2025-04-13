@@ -1,0 +1,33 @@
+services:
+  ctfd:
+    image: ctfd/ctfd:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - UPLOAD_FOLDER=/var/uploads
+      - DATABASE_URL=mysql+pymysql://ctfd:ctfd@db/ctfd
+      - REDIS_URL=redis://redis:6379
+      - WORKERS=1
+    volumes:
+      - ./uploads:/var/uploads
+      - ./CTFd:/opt/CTFd/data
+    restart: always
+    depends_on:
+      - db
+      - redis
+  db:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=ctfd
+      - MYSQL_PASSWORD=ctfd
+      - MYSQL_DATABASE=ctfd
+    volumes:
+      - ./db:/var/lib/mysql
+
+  redis:
+    image: redis:6.2
+    restart: always
+    volumes:
+      - ./redis:/data

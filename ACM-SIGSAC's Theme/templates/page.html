@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="jumbotron">
+      <img src="{{ url_for('views.themes', path='img/acm-hero.jpg') }}" style="width:350px; height:200px" alt="some image" />
+      <h1 class="display-4">Unleash Your Inner Hacker!</h1>
+      <p class="lead">
+        Presented by ACM SIGSAC
+      </p>
+      <hr class="my-4">
+      <p>
+        Welcome to the ultimate Capture the Flag (CTF) showdown! Prepare to dive into a digital realm of puzzles, riddles, and cybersecurity challenges that will push your skills to the limit.
+      </p>
+      <p>
+        Think you have what it takes to conquer the challenges and emerge as the CTF champion? Gather your team, sharpen your minds, and embark on this thrilling adventure!
+      </p>
+      <p>
+        Explore hidden clues, crack secret codes, and navigate through a web of intrigue. The journey won't be easy, but the rewards are worth it for those who dare to take on the challenge.
+      </p>
+      <a href="/challenges" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Begin Your Quest!</a>
+    </div>
+    <div class="container text-center" style="margin-top:10px;font-size:18px;">
+      <a href="https://github.com/dev-sire" class="text-primary" style="color: #FAF9F6;text-decoration:none;">
+        <small style="color: #FAF9F6;">
+          {% trans %}Designed & Implemented by: <span style="text-decoration:underline;">Aman Shahid</span>{% endtrans %}
+        </small>
+      </a>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ Assets.js("assets/js/page.js") }}
+{% endblock %}

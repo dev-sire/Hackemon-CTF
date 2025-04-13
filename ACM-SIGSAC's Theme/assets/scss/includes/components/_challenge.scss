@@ -1,0 +1,25 @@
+/* Challenge styles
+-------------------------------------------------- */
+
+.challenge-desc {
+  overflow-wrap: anywhere;
+  img {
+    max-width: 100%;
+  }
+}
+
+.challenge-info {
+  max-height: 60vh !important;
+  overflow: auto !important;
+  hr {
+    margin-top: 0;
+  }
+}
+
+.challenge-button {
+  box-shadow: 3px 3px 3px var(--bs-secondary);
+}
+
+.challenge-solved {
+  opacity: 0.6;
+}
