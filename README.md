@@ -249,6 +249,11 @@ In the CTFd administration panel, select the custom theme.
 
 The theme files can be modified to further customize the appearance of the CTFd platform.  Familiarity with HTML, CSS, and Jinja templating is required for advanced theme customization.
 
+### Team
+
+- [Aman Shahid](https://github.com/dev-sire/)
+- [Abdul Wasay Khan](https://github.com/AlWasay125/)
+
 ### Contributing
 
 Contributions to this repository are welcome. If you have any improvements to the k6 scripts, Docker Compose configuration, or custom theme, please submit a pull request.
