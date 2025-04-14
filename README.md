@@ -251,8 +251,8 @@ The theme files can be modified to further customize the appearance of the CTFd 
 
 ### Team
 
-[Aman Shahid](https://github.com/dev-sire/)
-[Abdul Wasay Khan](https://github.com/AlWasay125/)
+- [Aman Shahid](https://github.com/dev-sire/)
+- [Abdul Wasay Khan](https://github.com/AlWasay125/)
 
 ### Contributing
 
